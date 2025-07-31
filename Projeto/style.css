@@ -31,6 +31,9 @@ header {
   height: 180px;
   background-color: white;
 }
+#logos > img {
+  width: 60%;
+}
 #menu {
   width: 730px;
   height: 85px;
@@ -46,19 +49,84 @@ header {
   /*Line  height precisa ter o mesmo tamanho do height do pai*/
   line-height: 85px;
   padding: 0px 10px;
-
 }
 
-#menu > li:hover{
-    background-color: #0a4b73;
-    border-radius: 10px;
-    color: white;
-    cursor: pointer;
+#menu > li:hover {
+  background-color: #0a4b73;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
 }
 
 main {
   height: 840px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+#video, #redes, #Login, #apoio{
+  background-color: white;
+}
+#geral{
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  gap: 10px;
+}
+
+#video{
+  height: 495px;
+  width: 45%;
+}
+#lado-direito{
+  height: 495px;
+  width: 50%;
+}
+#redes{
+  height: 35%;
+}
+#login{
+  height:64% ;
+}
+#apoio{
+  height: 190px;
+  width: 90%;
+
 }
 footer {
   height: 550px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.item {
+  background-color: white;
+  height: 440px;
+  width: 440px;
+}
+h1 {
+  font-size: 35px;
+  font-weight: bolder;
+  text-align: center;
+  margin: 10px 0px;
+}
+.item > p {
+  width: 90%;
+  margin: auto;
+  font-size: 20px;
+  text-align: justify;
+  margin: 20px;
+}
+.item > p > img {
+  width: 50%;
+  margin-top: 20px;
+}
+.item > h2 {
+  text-align: start;
+  margin: 20px;
+  font-weight: 400;
 }
