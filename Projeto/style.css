@@ -63,12 +63,14 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
-#video, #redes, #Login, #apoio{
+#video,
+#redes,
+#Login,
+#apoio {
   background-color: white;
 }
-#geral{
+#geral {
   width: 90%;
   display: flex;
   flex-wrap: wrap;
@@ -77,25 +79,85 @@ main {
   gap: 10px;
 }
 
-#video{
+#video {
   height: 495px;
   width: 45%;
+  text-align: center;
 }
-#lado-direito{
+#video > iframe {
+  margin-top: 20px;
+}
+#lado-direito {
   height: 495px;
   width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
 }
-#redes{
-  height: 35%;
-}
-#login{
-  height:64% ;
-}
-#apoio{
-  height: 190px;
-  width: 90%;
 
+#redes {
+  height: 35%;
+  text-align: center;
 }
+#Login {
+  height: 64%;
+  text-align: center;
+}
+#Login > p {
+  text-align: center;
+}
+
+a {
+  color: #3bacd9;
+}
+button {
+  background-color: #4fce2d;
+  width: 20%;
+  height: 40px;
+  color: white;
+  font-size: 25px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin: 20px;
+}
+button:active {
+  background-color: #2484bf;
+}
+#Login > button {
+  text-align: center;
+}
+#apoio {
+  height: 190px;
+  width: 95%;
+  text-align: center;
+}
+
+.opcoes{
+  width: 70%;
+  height: 40px;
+  background-color: #2484bf;
+  color: white;
+  text-align: center;
+  border: none;
+  border-radius: 20px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+#mais {
+  display: flex;
+  justify-content: space-around;
+}
+.opcoes::placeholder {
+  text-align: center;
+  color: white;
+}
+
+#apoio > img {
+  margin-top: -40px;
+}
+
 footer {
   height: 550px;
   display: flex;
@@ -129,4 +191,33 @@ h1 {
   text-align: start;
   margin: 20px;
   font-weight: 400;
+}
+
+#geral2{
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  background-color: #f5f5f5;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+}
+.cards{
+  height: 320px;
+  width: 390px;
+  background-color: white;
+}
+.cards > ul{
+  width: 80%;
+  margin: auto;
+
+}
+#Texto{
+  height: 320px;
+  width: 390px;
+}
+#geral > li{
+  height: 20px;
 }
